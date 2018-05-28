@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+	<!-- Lint can't understand Kotlin sources and reports all resources
+		as unused; and ignore build/generated/res because of Play Services -->
+	<issue id="UnusedResources">
+		<ignore path="src/main/res/"/>
+		<ignore path="build/generated/res/"/>
+	</issue>
+</lint>

@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">YuvShot</string>
+	<string name="no_camera_no_fun">This app does not make any sense without camera access. Good bye.</string>
+	<string name="camera_error">Can\'t access camera, please try again</string>
+	<string name="take_photo">Take photo</string>
+	<string name="switch_camera">Switch camera</string>
+	<string name="file_saved">Saved as %1$s</string>
+</resources>
