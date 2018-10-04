@@ -95,10 +95,13 @@ class MainActivity : Activity() {
 		cameraView.setUseOrientationListener(true)
 		cameraView.setOnCameraListener(object : CameraView.OnCameraListener {
 			override fun onConfigureParameters(parameters: Camera.Parameters) {
-				for (mode in parameters.supportedSceneModes) {
-					if (mode == Camera.Parameters.SCENE_MODE_PORTRAIT) {
-						parameters.sceneMode = mode
-						break
+				val sceneModes = parameters.supportedSceneModes
+				sceneModes?.let {
+					for (mode in sceneModes) {
+						if (mode.equals(Camera.Parameters.SCENE_MODE_BARCODE)) {
+							parameters.sceneMode = mode
+							break
+						}
 					}
 				}
 				CameraView.setAutoFocus(parameters)
