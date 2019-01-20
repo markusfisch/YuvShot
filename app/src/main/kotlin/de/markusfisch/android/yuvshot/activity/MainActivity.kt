@@ -2,11 +2,11 @@
 
 package de.markusfisch.android.yuvshot.activity
 
-import android.annotation.SuppressLint
 import de.markusfisch.android.yuvshot.R
 
 import de.markusfisch.android.cameraview.widget.CameraView
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.pm.PackageManager
 import android.hardware.Camera
